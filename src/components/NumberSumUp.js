@@ -24,7 +24,7 @@ function NumberSumUp(props) {
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: BaseUrl + '/chat/sum_numbers/',
+            url: 'https://message-bice-eight.vercel.app//chat/sum_numbers/',
             headers: {
                 'Content-Type': 'application/json'
             },
