@@ -16,15 +16,15 @@ function NumberSumUp(props) {
     }
 
     function calculateHandler() {
-        let data = JSON.stringify({
-            "start_num": startNum,
-            "end_num": endNum
+          let data = JSON.stringify({
+            "start_num": Number(startNum),
+            "end_num": Number(endNum)
         });
 
         let config = {
             method: 'post',
             maxBodyLength: Infinity,
-            url: 'https://message-bice-eight.vercel.app/chat/sum_numbers/',
+            url: BaseUrl + 'chat/sum_numbers/',
             headers: {
                 'Content-Type': 'application/json'
             },
