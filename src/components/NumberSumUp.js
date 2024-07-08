@@ -17,8 +17,8 @@ function NumberSumUp(props) {
 
     function calculateHandler() {
         let data = JSON.stringify({
-            "start_num": {startNum},
-            "end_num": {endNum}
+            "start_num": startNum,
+            "end_num": endNum
         });
 
         let config = {
